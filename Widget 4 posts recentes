@@ -80,7 +80,7 @@ ul.rcentside .overlayx {
     z-index: 2;
     left: 0;
     top: 0;
-    opacity: .6;
+    opacity: .4;
     background-image: url(http://1.bp.blogspot.com/-FtnGJHMcWH8/UIV3IE-aaJI/AAAAAAAAGHs/WvLypnWxg5A/s1600/linebg-fade.png);
     background-position: 50% 50%;
     background-repeat: repeat-x
