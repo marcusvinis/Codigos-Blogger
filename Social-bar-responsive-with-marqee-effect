@@ -1,0 +1,134 @@
+#ranpost:hover {background-color: transparent !important;}
+.head_brnews{
+height:30px;background:#fff;width:100%;max-width:1160px;margin:0 auto;border-style: solid ;
+border-width: 1px;border-color: #cccccc;overflow: hidden;width: 938px;margin-top:20px;}
+.breaking-news{
+float:left;
+height:30px;
+position:relative;
+overflow:hidden;
+margin-bottom:20px;
+}
+.breaking-news h4{
+background: #9EC22D;
+display:block;
+float:left;
+padding:0 10px;
+height:32px;
+line-height:30px;
+color:#FFF;
+font-family: Oswald,arial,Georgia,serif;
+text-transform:uppercase;
+font-size:10pt;
+margin-right:10px
+}
+.breaking-news ul{
+float:left
+}
+.breaking-news a:hover{
+color:#333;
+}
+.breaking-news ul li{
+float:left;
+display:block;
+list-style:none;
+}
+.breaking-news ul a{
+padding:1px;
+display:block;
+color:#333;
+white-space:nowrap;
+float:left;
+line-height:30px;
+font-size:13px;
+font-family: 'Droid Serif', serif;
+display:hidden;
+}
+.breaking-news span{
+display:block;
+float:left;
+padding:1px 10px;
+color:#333;
+font-size:12px;
+line-height:30px;
+}
+.breaking-news marquee {
+padding-top:5px;
+}
+.samazhlo {
+background: #4371CF;
+position:absolute;
+float: left;
+padding: 0 10px;
+height: 32px;
+line-height: 30px;
+color: #FFF;
+font-family: Oswald,arial,Georgia,serif;
+text-transform: uppercase;
+font-size: 10pt;
+margin-right: 10px;}
+.tinynav {
+width:200px;display:none;
+height:30px;
+font-family: Oswald,arial,Georgia, serif;
+font-style: normal;
+font-weight: 400;
+font-size:18px;
+border:1px solid #000;
+margin:0 auto;margin-bottom:10px;
+}
+@media only screen and (max-width: 1028px){
+.head_brnews {width: 652px;}
+}
+@media only screen and (max-width: 725px){
+.head_brnews {width: 400px;}
+}
+#social { height:30px; float: right; }
+#social .social_header { margin-bottom: 10px; }
+#social a { border-left: 1px solid #ccc; transition: all 0.6s; -moz-transition: all 0.6s; -ms-transition: all 0.6s; -o-transition: all 0.6s; -webkit-transition: all 0.6s; }
+#social a:hover {transition: all 0.6s; -moz-transition: all 0.6s; -ms-transition: all 0.6s; -o-transition: all 0.6s; -webkit-transition: all 0.6s; }
+#social a.facebook { display:block; float:left; height:30px; width:30px; text-indent:-9999px; background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:0px -30px; background-size: 270px 60px;  }
+#social a:hover.facebook { background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:0px 0px; background-size: 270px 60px;  background-color:#436eac; }
+#social a.twitter { display:block; float:left; height:30px; width:30px; text-indent:-9999px; background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-30px -30px; background-size: 270px 60px; }
+#social a:hover.twitter { background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-30px 0px; background-size: 270px 60px;  background-color:#0598c9; }
+#social a.flickr { display:block; float:left; height:30px; width:30px; text-indent:-9999px; background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-60px -30px; background-size: 270px 60px; }
+#social a:hover.flickr { background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-60px 0px; background-size: 270px 60px;  background-color:#e33b7e; }
+#social a.pinterest{ display:block; float:left; height:30px; width:30px; text-indent:-9999px; background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-90px -30px; background-size: 270px 60px; }
+#social a:hover.pinterest { background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-90px 0px; background-size: 270px 60px;  background-color:#cb2027; }
+#social a.googleplus { display:block; float:left; height:30px; width:30px; text-indent:-9999px; background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-120px -30px; background-size: 270px 60px; }
+#social a:hover.googleplus { background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-120px 0px; background-size: 270px 60px;  background-color:#d64b2e; }
+#social a.vimeo { display:block; float:left; height:30px; width:30px; text-indent:-9999px; background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-150px -30px; background-size: 270px 60px; }
+#social a:hover.vimeo { background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-150px 0px; background-size: 270px 60px;  background-color:#86ae24;}
+#social a.youtube { display:block; float:left; height:30px; width:60px; text-indent:-9999px; background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-180px -30px; background-size: 270px 60px; }
+#social a:hover.youtube { background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-180px 0px; background-size: 270px 60px;  background-color:#e32114;}
+#social a.mail { display:block;float:left; height:30px; width:32px; text-indent:-9999px; background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-240px -30px; background-size: 270px 60px; }
+#social a:hover.mail { background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-240px 0px; background-size: 270px 60px;  background-color:#bc75d6;}
+
+
+<div class='head_brnews'>
+<div class='breaking-news'><div class='samazhlo'>Em destaque</div>  
+<script src='https://dl.dropboxusercontent.com/u/80436322/autoscroll.js' type='text/javascript'/>
+  <script type='text/javascript'>
+	var nMaxPosts =6;
+        var nWidth = 100;
+        var nScrollDelay = 60;
+        var sDirection = &quot;left&quot;;
+        var sOpenLinkLocation = &quot;N&quot;;
+        var sBulletChar = &quot;&gt;&gt;&quot;;
+</script> 
+<script src='/feeds/posts/default?alt=json-in-script&amp;callback=RecentPostsScrollerv2&amp;max-results=6' type='text/javascript'/>
+  </div> 
+
+<!--Social Icons Started -->
+<div id='social'>
+<a class='facebook' href='http://www.facebook.com/'/>
+<a class='twitter' href='https://twitter.com/'/>
+<a class='flickr' href='http://www.flickr.com/'/>
+<a class='pinterest' href='http://pinterest.com/'/>
+<a class='googleplus' href='https://plus.google.com/'/>
+<a class='vimeo' href='http://vimeo.com/'/>
+<a class='youtube' href='http://www.youtube.com/'/>
+<a class='mail' href='mailto:info@google.com'/>
+</div>
+<!--Social Icons End-->
+</div>
