@@ -41,7 +41,7 @@
 <b:if cond='data:blog.postImageThumbnailUrl'>
 <link expr:href='data:blog.postImageThumbnailUrl' rel='image_src'/>
 </b:if></b:if>
-<link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='https://raw.githubusercontent.com/marcusvinis/Codigos-MundoInformal/master/icon.ico' rel='icon' type='image/x-icon'/>
 <link href='https://plus.google.com/+100562857635513562536/posts' rel='publisher'/>
 <link href='https://plus.google.com/+100562857635513562536/about' rel='author'/>
 <link href='https://plus.google.com/+100562857635513562536' rel='me'/>
@@ -51,6 +51,7 @@
 <meta content='Brazil' name='geo.placename'/>
 <meta content='Marcus Vinícius S' name='Author'/>
 <meta content='id' name='geo.country'/>
+<meta content='pt_BR' property='og:locale'/>
 <b:if cond='data:blog.url == data:blog.homepageUrl'> 
 <b:if cond='data:blog.pageType == &quot;item&quot;'> 
 <b:if cond='data:blog.pageType == &quot;static_page&quot;'>  
