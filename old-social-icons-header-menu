@@ -1,0 +1,27 @@
+<style>
+#menusup {font-size:11px;z-index:10;overflow:hidden}
+#menusup a {width:21px;height:19px;padding:0 7px 0 6px;background:top center no-repeat}
+#menusup a:hover {background-position:bottom center}
+#menusup {margin: 14px 0 0 46px!important}
+</style>
+
+<div id='menusup'>
+<!--
+  <li><a href='http://facebook.com/mundoinformal'><i class='fa fa-facebook'/></a></li>
+  <li><a href='http://twitter.com/mundo_informal'><i class='fa fa-twitter'/></a></li>
+  <li><a href='https://twitter.com/mundo_informal'><i class='fa fa-google-plus'/></a></li>
+  <li><a href='https://youtube.com/mundoinformal'><i class='fa fa-youtube-play'/></a></li>
+-->
+<li>
+<a href='https://facebook.com/MundoInformal' style='background-image: url(https://lh5.googleusercontent.com/-B5O_wFGIP2c/VFhBE-YNODI/AAAAAAAABUk/-e3iFLiO8NQ/s38/facebookicon.png)' target='_blank' title='Curta o Mundo Informal no Facebook'/>
+</li>
+<li>
+<a href='https://twitter.com/Mundo_Informal' style='background-image: url(https://lh3.googleusercontent.com/-buVdBDbGXak/VFhCLzsDWiI/AAAAAAAABVE/nqjHppP8Tbk/s38/twittericon.png)' target='_blank' title='Siga o @Mundo_Informal no Twitter'/>
+</li>
+<li>
+<a href='https://plus.google.com/+mundoinformal' style='background-image: url(https://lh4.googleusercontent.com/-kLkJURSO89A/VFhBE1HUMNI/AAAAAAAABUo/xqgp0MhVNJM/s38/gplusicon.png)' target='_blank' title='Siga o Mundo Informal no Google+'/>
+</li>
+<li>
+<a href='https://www.youtube.com/MundoInformal' style='background-image: url(https://lh4.googleusercontent.com/-gaRy9CstIEo/VFhCrOTz8YI/AAAAAAAABVg/ZZ57t2-9Ke4/s38/youtubeicon.png)' target='_blank' title='Inscreva-se no nosso canal do YouTube'/>
+</li>
+</div>
