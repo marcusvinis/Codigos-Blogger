@@ -439,7 +439,16 @@ $(window).bind("load resize", function(){
   <b:section class='banner-header' id='banner-header' maxwidgets='1' showaddelement='yes'>
     <b:widget id='HTML2' locked='false' title='' type='HTML'>
       <b:widget-settings>
-        <b:widget-setting name='content'><![CDATA[<a href='#' target='_blank' title='Kunjungi blog Dunia Blanter'><img alt='iklan banner' height='90' src='https://4.bp.blogspot.com/-6ZDrg7GHPa4/VytnmRI9BaI/AAAAAAAAD0w/dyOGpRSMe78xiIGN4sDumyA-VGDjDYksACLcB/s1600/AdSpace768x90.png' title='Kunjungi blog Dunia Blanter' width='768'/></a>]]></b:widget-setting>
+        <b:widget-setting name='content'>&lt;script async src=&quot;//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
+&lt;!-- topo 768x90 --&gt;
+&lt;ins class=&quot;adsbygoogle&quot;
+     style=&quot;display:block&quot;
+     data-ad-client=&quot;ca-pub-8497529601705137&quot;
+     data-ad-slot=&quot;5653704753&quot;
+     data-ad-format=&quot;auto&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;
+(adsbygoogle = window.adsbygoogle || []).push({});
+&lt;/script&gt;</b:widget-setting>
       </b:widget-settings>
       <b:includable id='main'>
   <!-- only display title if it's non-empty -->
@@ -539,7 +548,16 @@ $(window).bind("load resize", function(){
 <b:section class='largebanner' id='largebanner' maxwidgets='1' showaddelement='yes'>
   <b:widget id='HTML3' locked='false' title='' type='HTML'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<a href='#' target='_blank' title='Kunjungi blog Dunia Blanter'><img alt='iklan banner' height='90' src='https://2.bp.blogspot.com/-Z64f3HN58R0/VytnmVwUSbI/AAAAAAAAD0s/i7NJBFQtDuIFJVNyGN5t25zyDiOgB7noQCLcB/s1600/AdSpace970x90.png' title='Kunjungi blog Dunia Blanter' width='970'/></a>]]></b:widget-setting>
+      <b:widget-setting name='content'>&lt;script async src=&quot;//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
+&lt;!-- topo 2 mundo informal 970x90 --&gt;
+&lt;ins class=&quot;adsbygoogle&quot;
+     style=&quot;display:block&quot;
+     data-ad-client=&quot;ca-pub-8497529601705137&quot;
+     data-ad-slot=&quot;5434390517&quot;
+     data-ad-format=&quot;auto&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;
+(adsbygoogle = window.adsbygoogle || []).push({});
+&lt;/script&gt;</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
   <!-- only display title if it's non-empty -->
@@ -2173,7 +2191,17 @@ FeaturedPostSide( {
   </b:widget>
   <b:widget id='HTML1' locked='false' title='Anunciantes' type='HTML'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<center><a href='#' target='_blank' title='Kunjungi blog Dunia Blanter'><img alt='iklan banner' height='250' src='https://2.bp.blogspot.com/-m3MrHg35-bk/VytnmXQDgxI/AAAAAAAAD00/wryNi0TepzA9ITvi-1j_OPHwYifswMN0ACLcB/s1600/AdSpace300x250.png' title='Kunjungi blog Dunia Blanter' width='300'/></a></center>]]></b:widget-setting>
+      <b:widget-setting name='content'>&lt;center&gt;
+&lt;script async src=&quot;//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
+&lt;!-- Recomendação --&gt;
+&lt;ins class=&quot;adsbygoogle&quot;
+     style=&quot;display:inline-block;width:300px;height:250px&quot;
+     data-ad-client=&quot;ca-pub-8497529601705137&quot;
+     data-ad-slot=&quot;2510425621&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;
+(adsbygoogle = window.adsbygoogle || []).push({});
+&lt;/script&gt;
+&lt;/center&gt;</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
   <!-- only display title if it's non-empty -->
