@@ -16,7 +16,7 @@
 <title><data:blog.pageName/> - <data:blog.title/></title>
 </b:if></b:if>
 <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
-<title>Page Not Found - <data:blog.title/></title>
+<title>Página não encontrada - <data:blog.title/></title>
 </b:if>
 <b:if cond='data:blog.pageType == &quot;archive&quot;'>
 <meta content='noindex' name='robots'/>
@@ -33,7 +33,7 @@
 <meta expr:content='data:blog.pageName + &quot;, &quot; + data:blog.pageTitle + &quot;, &quot; + data:blog.title' name='keywords'/>
 </b:if></b:if>
 <b:if cond='data:blog.url == data:blog.homepageUrl'>
-<meta content='xxxxx' name='keywords'/></b:if>
+<meta content='Downloads,Tutoriais, dica blogger, Informais, Portable, Cursos, Blogger, Widget, Design Gráfico, Sistema Operacional, Photoshop, Linux, Wallpaper, Templates blogger, blogspot' name='keywords'/></b:if>
 <link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
 <link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default?alt=rss&quot;' expr:title='data:blog.title + &quot; - RSS&quot;' rel='alternate' type='application/rss+xml'/>
 <link expr:href='&quot;https://www.blogger.com/feeds/&quot; + data:blog.blogId + &quot;/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
@@ -42,14 +42,14 @@
 <link expr:href='data:blog.postImageThumbnailUrl' rel='image_src'/>
 </b:if></b:if>
 <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
-<link href='https://plus.google.com/+YOURGPLUS/posts' rel='publisher'/>
-<link href='https://plus.google.com/+YOURGPLUS/about' rel='author'/>
-<link href='https://plus.google.com/+YOURGPLUS' rel='me'/>
+<link href='https://plus.google.com/+100562857635513562536/posts' rel='publisher'/>
+<link href='https://plus.google.com/+100562857635513562536/about' rel='author'/>
+<link href='https://plus.google.com/+100562857635513562536' rel='me'/>
 <meta content='xxxxx' name='google-site-verification'/>
 <meta content='xxxxx' name='msvalidate.01'/>
 <meta content='xxxxx' name='alexaVerifyID'/>
-<meta content='Indonesia' name='geo.placename'/>
-<meta content='Your Name' name='Author'/>
+<meta content='Brazil' name='geo.placename'/>
+<meta content='Marcus Vinícius S' name='Author'/>
 <meta content='id' name='geo.country'/>
 <b:if cond='data:blog.url == data:blog.homepageUrl'> 
 <b:if cond='data:blog.pageType == &quot;item&quot;'> 
@@ -79,17 +79,17 @@
 <b:if cond='data:blog.metaDescription'>
 <meta expr:content='data:blog.metaDescription' property='og:description'/>
 <b:else/>
-<meta content='xxxxx' property='og:description'/>
+<meta content='O melhor conteúdo sobre tecnologia de forma muito mais informal! Notícias sobre tecnologia, Dicas para Blogger, Widgets, Downloads, tutorias e muito mais!' property='og:description'/>
 </b:if>
 <meta expr:content='data:blog.title' property='og:site_name'/>
 <meta content='xxxxx' property='fb:admins'/>
 <meta content='xxxxx' property='fb:app_id'/>
 <meta expr:content='data:blog.title' name='twitter:site'/>
-<meta content='@xxxxx' name='twitter:creator'/>
+<meta content='@mundo_informal' name='twitter:creator'/>
 <b:skin><![CDATA[
 /*
 Blogger Template Style [Info]
-Template Name  : Masign Clean
+Template Name  : Mundo Informal 2k17 based on Masign Clean
 Template Date  : 7 Juli 2017
 Designer       : Rhinokage Rio
 Designer URL   : http://www.idblanter.com
