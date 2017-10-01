@@ -459,9 +459,9 @@ $(window).bind("load resize", function(){
 
 <li class='subpost'><a class='submenu waves-effect' href='#' itemprop='url' title='Notícias'><span itemprop='name'>Notícias</span></a>
 <ul class='submenu'>
-<li><a href='https://www.in4mal.blogspot.com/search/label/Template' target='_blank' title='Últimas Notícias'><i class='fa fa-laptop'/> Últimas Notícias</a></li>
-<li><a href='https://www.idblanter.com/search/label/Tutorial' target='_blank' title='Top Semanal'><i class='fa fa-folder-o'/> Top Semanal</a></li>
-<li><a href='https://www.idblanter.com/search/label/Pengetahuan' target='_blank' title='Universo OpenSource'><i class='fa fa-book'/> Universo OpenSource</a></li>
+<li><a href='https://www.in4mal.blogspot.com/search/label/Notícias' title='Últimas Notícias'><i class='fa fa-laptop'/> Últimas Notícias</a></li>
+<li><a href='https://www.idblanter.com/search/label/Top%20Semanal' title='Top Semanal'><i class='fa fa-folder-o'/> Top Semanal</a></li>
+<li><a href='https://www.idblanter.com/search/label/Universo%20OpenSource' title='Universo OpenSource'><i class='fa fa-book'/> Universo OpenSource</a></li>
 </ul>
 </li>
 
@@ -499,7 +499,7 @@ $(window).bind("load resize", function(){
 <li><a class='waves-effect' href='https://www.in4mal.blogspot.com/p/termos-de-uso.html' itemprop='url' title='Termos de uso'><span itemprop='name'>Termos de uso</span></a></li>
 <li><a class='waves-effect' href='https://www.in4mal.blogspot.com/p/anuncie.html' itemprop='url' title='Anuncie'><span itemprop='name'>Anuncie</span></a></li>
 <li><a class='waves-effect' href='https://www.in4mal.blogspot.com/p/parceiros.html' itemprop='url' title='Nossos Parceiros'><span itemprop='name'>Parceria</span></a></li>
-  <li><a class='waves-effect' href='https://www.in4mal.blogspot.com/p/sobre.html' itemprop='url' title='Sobre'><span itemprop='name'>Sobre</span></a></li>
+  <li><a class='waves-effect' href='https://www.in4mal.blogspot.com/p/sobre.html' target='_blank'  itemprop='url' title='Sobre'><span itemprop='name'>Sobre</span></a></li>
 </ul></div>
 <div class='search-block' itemprop='mainEntity' itemscope='itemscope' itemtype='http://schema.org/WebSite'>
 <meta expr:content='data:blog.homepageUrl' itemprop='url'/><ul><li>
@@ -509,20 +509,23 @@ $(window).bind("load resize", function(){
 <ul class='sosmedimut'>
 	
 <style>
-#menusup {font-size:11px;z-index:10;overflow:hidden}
-#menusup a {width:21px;height:19px;padding:0 7px 0 6px;background:top center no-repeat}
-#menusup a:hover {background-position:bottom center}
 #menusup {margin: 14px 0 0 46px!important}
-
+#menusup {float:right;font-size:11px;z-index:10;overflow:hidden}
+#menusup a {float:left;width:21px;height:21px;padding:0 8px 0 7px;background:bottom center no-repeat}
+#menusup a:hover {background-position:top center}
 </style>
 <div id='menusup'>
-<li><a href='https://facebook.com/MundoInformal' style='background-image: url(https://lh5.googleusercontent.com/-B5O_wFGIP2c/VFhBE-YNODI/AAAAAAAABUk/-e3iFLiO8NQ/s38/facebookicon.png)' target='_blank' title='Curta o Mundo Informal no Facebook'/>
+<li>
+<a href='https://facebook.com/MundoInformal' style='background-image: url(https://3.bp.blogspot.com/-qByw-W44iA4/WFmymhPhNjI/AAAAAAAAMRI/pFdrNCnT4tk-_2o_nFqET3WaMxXgHDw0ACLcB/s1600/facebookicon.png)' target='_blank' title='Curta o Mundo Informal no Facebook'></a>
 </li>
-<li><a href='https://twitter.com/Mundo_Informal' style='background-image: url(https://lh3.googleusercontent.com/-buVdBDbGXak/VFhCLzsDWiI/AAAAAAAABVE/nqjHppP8Tbk/s38/twittericon.png)' target='_blank' title='Siga o @Mundo_Informal no Twitter'/>
+<li>
+<a href='https://twitter.com/Mundo_Informal' style='background-image: url(https://2.bp.blogspot.com/-poS_el-Bu2U/WFmymiQgWgI/AAAAAAAAMRQ/v6RLLTj-VT4Nm4pWkikPXbSKQL8-iVdlACLcB/s1600/twittericon.png)' target='_blank' title='Siga o @Mundo_Informal no Twitter'></a>
 </li>
-<li><a href='https://plus.google.com/+mundoinformal' style='background-image: url(https://lh4.googleusercontent.com/-kLkJURSO89A/VFhBE1HUMNI/AAAAAAAABUo/xqgp0MhVNJM/s38/gplusicon.png)' target='_blank' title='Siga o Mundo Informal no Google+'/>
+<li>
+<a href='http://plus.google.com/+mundoinformal' style='background-image: url(https://2.bp.blogspot.com/-FqNm85L4iiw/WFmymmYGKgI/AAAAAAAAMRM/ODa2MaIPKh83xMPVyCBu-OKjHNZOJd0kACLcB/s1600/gplusicon.png)' target='_blank' title='Siga o Mundo Informal no Google+'></a>
 </li>
-<li><a href='https://www.youtube.com/MundoInformal' style='background-image: url(https://lh4.googleusercontent.com/-gaRy9CstIEo/VFhCrOTz8YI/AAAAAAAABVg/ZZ57t2-9Ke4/s38/youtubeicon.png)' target='_blank' title='Inscreva-se no nosso canal do YouTube'/>
+<li>
+<a href='http://www.youtube.com/MundoInformal' style='background-image: url(https://1.bp.blogspot.com/-l0WycqOyLpc/WFmym5N5BcI/AAAAAAAAMRU/dADhdMYo9coXSbdM2tyJY79on3OSAKczACLcB/s1600/youtubeicon.png)' target='_blank' title='Inscreva-se no nosso canal do YouTube'></a>
 </li>
 </div>
 
