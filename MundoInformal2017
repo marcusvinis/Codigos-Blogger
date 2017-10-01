@@ -88,9 +88,9 @@
 <meta expr:content='data:blog.title' name='twitter:site'/>
 <meta content='@mundo_informal' name='twitter:creator'/>
 
-<meta name="theme-color" content="#0ba9f4"/>
-<meta name="msapplication-navbutton-color" content="#75b529"/>
-<meta name="apple-mobile-web-app-status-bar-style" content="#0ba9f4"/>
+<meta content='#0ba9f4' name='theme-color'/>
+<meta content='#75b529' name='msapplication-navbutton-color'/>
+<meta content='#0ba9f4' name='apple-mobile-web-app-status-bar-style'/>
 
 <b:skin><![CDATA[
 /*
@@ -465,8 +465,8 @@ $(window).bind("load resize", function(){
 <li class='subpost'><a class='submenu waves-effect' href='#' itemprop='url' title='Notícias'><span itemprop='name'>Notícias</span></a>
 <ul class='submenu'>
 <li><a href='https://in4mal.blogspot.com/search/label/Notícias' title='Últimas Notícias'><i class='fa fa-laptop'/> Últimas Notícias</a></li>
-<li><a href='https://www.idblanter.com/search/label/Top%20Semanal' title='Top Semanal'><i class='fa fa-folder-o'/> Top Semanal</a></li>
-<li><a href='https://www.idblanter.com/search/label/Universo%20OpenSource' title='Universo OpenSource'><i class='fa fa-book'/> Universo OpenSource</a></li>
+<li><a href='https://in4mal.blogspot.com/search/label/Top%20Semanal' title='Top Semanal'><i class='fa fa-folder-o'/> Top Semanal</a></li>
+<li><a href='https://in4mal.blogspot.com/search/label/Universo%20OpenSource' title='Universo OpenSource'><i class='fa fa-book'/> Universo OpenSource</a></li>
 </ul>
 </li>
 
