@@ -196,6 +196,8 @@ div#shareblanterx {
 .recentpostel p{display:none}
 .xblanter {
     padding: 10px;
+	background-color: #f5f5f5;
+	min-height: 40px;
 }
 #recentpostload{color:#888;font-family:Tahoma;font-size:100px;letter-spacing:-10px;text-align:center;text-shadow:-5px 0 1px #444;background:url(https://2.bp.blogspot.com/-60aISBQLRY0/VFBMqzLfzGI/AAAAAAAABgM/GInmVTvEzkc/s1600/loader.gif) 50% 50% no-repeat #fff;height:470px}
 #recentpostnavfeed{color:#bbb;font-family:Verdana;font-size:12px;text-align:center;margin:0}
@@ -476,13 +478,25 @@ $(window).bind("load resize", function(){
 <input id='s-text' itemprop='query-input' name='q' placeholder='Encontre no site' required='required' type='text'/>
 </form></li></ul></div>
 <ul class='sosmedimut'>
-	<li><img alt='Imagem de página não encontrada' height='21' src='https://3.bp.blogspot.com/-qByw-W44iA4/WFmymhPhNjI/AAAAAAAAMRI/pFdrNCnT4tk-_2o_nFqET3WaMxXgHDw0ACLcB/s1600/facebookicon.png' width='21'/></li>
-	<li><a href='http://facebook.com/psblast' target='_blank' title='Curta o PlayStation Blast no Facebook'>
-<img href='https://3.bp.blogspot.com/-qByw-W44iA4/WFmymhPhNjI/AAAAAAAAMRI/pFdrNCnT4tk-_2o_nFqET3WaMxXgHDw0ACLcB/s1600/facebookicon.png'/> </a></li>
-  <li><a href='http://facebook.com/mundoinformal'><i class='fa fa-facebook'/></a></li>
-  <li><a href='http://twitter.com/mundo_informal'><i class='fa fa-twitter'/></a></li>
-  <li><a href='https://twitter.com/mundo_informal'><i class='fa fa-google-plus'/></a></li>
-  <li><a href='https://youtube.com/mundoinformal'><i class='fa fa-youtube-play'/></a></li>
+	
+<style>
+#menusup {font-size:11px;z-index:10;overflow:hidden}
+#menusup a {width:21px;height:19px;padding:0 7px 0 6px;background:top center no-repeat}
+#menusup a:hover {background-position:bottom center}
+#menusup {margin: 14px 0 0 46px!important}
+
+</style>
+<div id='menusup'>
+<li><a href='http://facebook.com/MundoInformal' style='background-image: url(http://lh5.googleusercontent.com/-B5O_wFGIP2c/VFhBE-YNODI/AAAAAAAABUk/-e3iFLiO8NQ/s38/facebookicon.png)' target='_blank' title='Curta o Mundo Informal no Facebook'/>
+</li>
+<li><a href='http://twitter.com/Mundo_Informal' style='background-image: url(http://lh3.googleusercontent.com/-buVdBDbGXak/VFhCLzsDWiI/AAAAAAAABVE/nqjHppP8Tbk/s38/twittericon.png)' target='_blank' title='Siga o @Mundo_Informal no Twitter'/>
+</li>
+<li><a href='http://plus.google.com/+mundoinformal' style='background-image: url(http://lh4.googleusercontent.com/-kLkJURSO89A/VFhBE1HUMNI/AAAAAAAABUo/xqgp0MhVNJM/s38/gplusicon.png)' target='_blank' title='Siga o Mundo Informal no Google+'/>
+</li>
+<li><a href='http://www.youtube.com/MundoInformal' style='background-image: url(http://lh4.googleusercontent.com/-gaRy9CstIEo/VFhCrOTz8YI/AAAAAAAABVg/ZZ57t2-9Ke4/s38/youtubeicon.png)' target='_blank' title='Inscreva-se no nosso canal do YouTube'/>
+</li>
+</div>
+
   </ul>
 </div></div></div></div></div><div class='clear'/>
 <b:section class='largebanner' id='largebanner' maxwidgets='1' showaddelement='yes'>
