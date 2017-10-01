@@ -83,10 +83,15 @@
 <meta content='O melhor conteúdo sobre tecnologia de forma muito mais informal! Notícias sobre tecnologia, Dicas para Blogger, Widgets, Downloads, tutorias e muito mais!' property='og:description'/>
 </b:if>
 <meta expr:content='data:blog.title' property='og:site_name'/>
-<meta content='xxxxx' property='fb:admins'/>
-<meta content='xxxxx' property='fb:app_id'/>
+<meta content='https://www.facebook.com/mundoinformal' property='fb:admins'/>
+<meta content='176263869612459' property='fb:app_id'/>
 <meta expr:content='data:blog.title' name='twitter:site'/>
 <meta content='@mundo_informal' name='twitter:creator'/>
+
+<meta name="theme-color" content="#0ba9f4"/>
+<meta name="msapplication-navbutton-color" content="#75b529"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="#0ba9f4"/>
+
 <b:skin><![CDATA[
 /*
 Blogger Template Style [Info]
