@@ -152,7 +152,7 @@ a.showblog {
 }
 .tagx a {
     border-radius: 5px!important;
-    font-size: 14px;
+    font-size: 12px;
     padding: 5px 10px;
     height: auto!important;
     display: block;
@@ -200,7 +200,8 @@ div#shareblanterx {
 	min-height: 40px;
 }
 #recentpostload{color:#888;font-family:Tahoma;font-size:100px;letter-spacing:-10px;text-align:center;text-shadow:-5px 0 1px #444;background:url(https://2.bp.blogspot.com/-60aISBQLRY0/VFBMqzLfzGI/AAAAAAAABgM/GInmVTvEzkc/s1600/loader.gif) 50% 50% no-repeat #fff;height:470px}
-#recentpostnavfeed{color:#bbb;font-family:Verdana;font-size:12px;text-align:center;margin:0}
+#recentpostnavfeed{color:#bbb;font-family:Verdana;font-size:12px;text-align:center;margin:0;display:none!important}
+<!-- Ocultar a barra de navegação dos blocos da home #recentpostnavfeed{display:none!important}-->
 #recentpostnavfeed:hover{background-color:#fefefe}
 #recentpostnavfeed a{color:#fff!important;background:#0ba9f4;font-family:Tahoma!important;font-size:12px!important;font-weight:400!important;display:block;padding:11px 15px;border-radius:4px}
 #recentpostnavfeed span{padding:11px;color:#fafafa}
@@ -313,7 +314,7 @@ function labelthumbs(t){for(var e=0;e<numposts;e++){var n,r=t.feed.entry[e],m=r.
 //]]>
 </script>
 <script type='text/javascript'>
-var numposts=1,numposts2=7,showpostthumbnails=!0,showpostthumbnails2=!0,displaymore=!1,displaymore2=!1,showcommentnum=!1,showcommentnum2=!1,showpostdate=!1,showpostdate2=!1,showpostsummary=!0,numchars=150,thumb_width=380,thumb_height=270,thumb_width2=200,thumb_height2=130,no_thumb=&quot;http://3.bp.blogspot.com/-PHzN2A92GHE/Vmim2TTkAII/AAAAAAAADZU/X42ioeFiyBo/s1600/newarlina_thumb.png&quot;,no_thumb2=&quot;http://2.bp.blogspot.com/-cW6waOyA8mY/Vmim2VkylII/AAAAAAAADZY/_pANIKGBUXA/s1600/newarlinathumb_small.png&quot;;
+var numposts=1,numposts2=7,showpostthumbnails=!0,showpostthumbnails2=!0,displaymore=!1,displaymore2=!1,showcommentnum=!1,showcommentnum2=!1,showpostdate=!1,showpostdate2=!1,showpostsummary=!0,numchars=150,thumb_width=380,thumb_height=270,thumb_width2=200,thumb_height2=130,no_thumb=&quot;https://3.bp.blogspot.com/-PHzN2A92GHE/Vmim2TTkAII/AAAAAAAADZU/X42ioeFiyBo/s1600/newarlina_thumb.png&quot;,no_thumb2=&quot;https://2.bp.blogspot.com/-cW6waOyA8mY/Vmim2VkylII/AAAAAAAADZY/_pANIKGBUXA/s1600/newarlinathumb_small.png&quot;;
 </script>
 <script type='text/javascript'>
 //<![CDATA[
@@ -454,23 +455,50 @@ $(window).bind("load resize", function(){
 <div class='slidemenu'><div class='ab-navigation'><div class='containers'><div class='abnavbar'>
 <ul class='nav'>
 <li class='current-menu-item'><a class='waves-effect' expr:href='data:blog.homepageUrl' itemprop='url' title='Home'><span itemprop='name'>Página inicial</span></a></li>
-<li><a class='waves-effect' href='#' itemprop='url' title='Chat'><span itemprop='name'>Notícias</span></a></li>
-<li><a class='waves-effect' href='#' itemprop='url' title='Report a Bug'><span itemprop='name'>Tutoriais</span></a></li>
-<li><a class='waves-effect' href='#' itemprop='url' title='Download'><span itemprop='name'>OpenSource</span></a></li>
-<li><a class='submenu waves-effect' href='#' itemprop='url' title='More Menu'><span itemprop='name'>Downloads</span></a>
+
+<li class='subpost'><a class='submenu waves-effect' href='#' itemprop='url' title='Notícias'><span itemprop='name'>Notícias</span></a>
+<ul class='submenu'>
+<li><a href='https://www.in4mal.blogspot.com/search/label/Template' target='_blank' title='Últimas Notícias'><i class='fa fa-laptop'/> Últimas Notícias</a></li>
+<li><a href='https://www.idblanter.com/search/label/Tutorial' target='_blank' title='Top Semanal'><i class='fa fa-folder-o'/> Top Semanal</a></li>
+<li><a href='https://www.idblanter.com/search/label/Pengetahuan' target='_blank' title='Universo OpenSource'><i class='fa fa-book'/> Universo OpenSource</a></li>
+</ul>
+</li>
+
+<li><a class='waves-effect' href='#' itemprop='url' title='Análises'><span itemprop='name'>Análises</span></a></li>
+
+<li class='subpost'><a class='submenu waves-effect' href='#' itemprop='url' title='Tutoriais'><span itemprop='name'>Tutoriais</span></a>
+<ul class='submenu'>
+<li><a href='https://www.in4mal.blogspot.com/search/label/Windows' title='Windows'>Windows</a></li>
+<li><a href='https://www.in4mal.blogspot.com/search/label/Linux' title='Linux'>Linux</a></li>
+<li><a href='https://www.in4mal.blogspot.com/search/label/Photoshop' title='Edição de Imagens'>Edição de Imagens</a></li>
+<li><a href='https://www.in4mal.blogspot.com/search/label/Dicas Blogger' title='Dicas Blogger'>Dicas Blogger</a></li>
+<li><a href='https://www.in4mal.blogspot.com/search/label/Código%20Blogger' title='Melhore seu site/blog'>Melhore seu site/blog</a></li>
+</ul>
+</li>
+
+<li class='subpost'><a class='submenu waves-effect' href='#' itemprop='url' title='Colunas'><span itemprop='name'>Colunas</span></a>
+<ul class='submenu'>
+<li><a href='https://www.in4mal.blogspot.com/search/label/Internet' title='Internet'>Internet</a></li>
+<li><a href='https://www.in4mal.blogspot.com/search/label/Design%20Gráfico' title='Design Gráfico'>Design Gráfico</a></li>
+<li><a href='https://www.in4mal.blogspot.com/search/label/Web%20Design' title='Web Design'>Web Design</a></li>
+<li><a href='https://www.in4mal.blogspot.com/search/label/Inspiração' title='Inspiração'>Inspiração</a></li>
+</ul>
+</li>
+
+<li><a class='submenu waves-effect' href='#' itemprop='url' title='Freebies'><span itemprop='name'>Freebies</span></a>
 <ul>
-<li><a href='#' itemprop='url' title='Sub Menu 1'><span itemprop='name'>Sub Menu 1</span></a></li>
-<li><a href='#' itemprop='url' title='Sub Menu 2'><span itemprop='name'>Sub Menu 2</span></a></li>
-<li><a href='#' itemprop='url' title='Sub Menu 3'><span itemprop='name'>Sub Menu 3</span></a></li>
-<li><a href='#' itemprop='url' title='Sub Menu 4'><span itemprop='name'>Sub Menu 4</span></a></li>
+<li><a href='https://www.in4mal.blogspot.com/search/label/E-book' itemprop='url' title='E-books'><span itemprop='name'>E-books</span></a></li>
+<li><a href='https://www.in4mal.blogspot.com/search/label/Temas%20Blogger' itemprop='url' title='Temas Blogger'><span itemprop='name'>Temas Blogger</span></a></li>
+<li><a href='https://www.in4mal.blogspot.com/search/label/Cursos' itemprop='url' title='Cursos'><span itemprop='name'>Cursos</span></a></li>
+<li><a href='https://www.in4mal.blogspot.com/search/label/Fontes' itemprop='url' title='Fontes'><span itemprop='name'>Fontes</span></a></li>
 </ul></li><div class='nav-line' style='left:0;width:57px;overflow:hidden'/></ul></div></div></div>
 <div class='sosialbutton'>
-<a class='moreMenu' href='javascript:;' title='Show Menu'><i class='material-icons'>&#58836;</i></a>
+<a class='moreMenu' href='javascript:;' title='Mostrar Menu'><i class='material-icons'>&#58836;</i></a>
 <div class='moretinymenu'><ul>
-<li><a class='waves-effect' href='#' itemprop='url' title='Profile'><span itemprop='name'>Profile</span></a></li>
-<li><a class='waves-effect' href='#' itemprop='url' title='Settings'><span itemprop='name'>Settings</span></a></li>
-<li><a class='waves-effect' href='#' itemprop='url' title='Status'><span itemprop='name'>Status</span></a></li>
-<li><a class='waves-effect' href='#' itemprop='url' title='Exit'><span itemprop='name'>Exit</span></a></li>
+<li><a class='waves-effect' href='https://www.in4mal.blogspot.com/p/termos-de-uso.html' itemprop='url' title='Termos de uso'><span itemprop='name'>Termos de uso</span></a></li>
+<li><a class='waves-effect' href='https://www.in4mal.blogspot.com/p/anuncie.html' itemprop='url' title='Anuncie'><span itemprop='name'>Anuncie</span></a></li>
+<li><a class='waves-effect' href='https://www.in4mal.blogspot.com/p/parceiros.html' itemprop='url' title='Nossos Parceiros'><span itemprop='name'>Parceria</span></a></li>
+  <li><a class='waves-effect' href='https://www.in4mal.blogspot.com/p/sobre.html' itemprop='url' title='Sobre'><span itemprop='name'>Sobre</span></a></li>
 </ul></div>
 <div class='search-block' itemprop='mainEntity' itemscope='itemscope' itemtype='http://schema.org/WebSite'>
 <meta expr:content='data:blog.homepageUrl' itemprop='url'/><ul><li>
@@ -487,13 +515,13 @@ $(window).bind("load resize", function(){
 
 </style>
 <div id='menusup'>
-<li><a href='http://facebook.com/MundoInformal' style='background-image: url(http://lh5.googleusercontent.com/-B5O_wFGIP2c/VFhBE-YNODI/AAAAAAAABUk/-e3iFLiO8NQ/s38/facebookicon.png)' target='_blank' title='Curta o Mundo Informal no Facebook'/>
+<li><a href='https://facebook.com/MundoInformal' style='background-image: url(https://lh5.googleusercontent.com/-B5O_wFGIP2c/VFhBE-YNODI/AAAAAAAABUk/-e3iFLiO8NQ/s38/facebookicon.png)' target='_blank' title='Curta o Mundo Informal no Facebook'/>
 </li>
-<li><a href='http://twitter.com/Mundo_Informal' style='background-image: url(http://lh3.googleusercontent.com/-buVdBDbGXak/VFhCLzsDWiI/AAAAAAAABVE/nqjHppP8Tbk/s38/twittericon.png)' target='_blank' title='Siga o @Mundo_Informal no Twitter'/>
+<li><a href='https://twitter.com/Mundo_Informal' style='background-image: url(https://lh3.googleusercontent.com/-buVdBDbGXak/VFhCLzsDWiI/AAAAAAAABVE/nqjHppP8Tbk/s38/twittericon.png)' target='_blank' title='Siga o @Mundo_Informal no Twitter'/>
 </li>
-<li><a href='http://plus.google.com/+mundoinformal' style='background-image: url(http://lh4.googleusercontent.com/-kLkJURSO89A/VFhBE1HUMNI/AAAAAAAABUo/xqgp0MhVNJM/s38/gplusicon.png)' target='_blank' title='Siga o Mundo Informal no Google+'/>
+<li><a href='https://plus.google.com/+mundoinformal' style='background-image: url(https://lh4.googleusercontent.com/-kLkJURSO89A/VFhBE1HUMNI/AAAAAAAABUo/xqgp0MhVNJM/s38/gplusicon.png)' target='_blank' title='Siga o Mundo Informal no Google+'/>
 </li>
-<li><a href='http://www.youtube.com/MundoInformal' style='background-image: url(http://lh4.googleusercontent.com/-gaRy9CstIEo/VFhCrOTz8YI/AAAAAAAABVg/ZZ57t2-9Ke4/s38/youtubeicon.png)' target='_blank' title='Inscreva-se no nosso canal do YouTube'/>
+<li><a href='https://www.youtube.com/MundoInformal' style='background-image: url(https://lh4.googleusercontent.com/-gaRy9CstIEo/VFhCrOTz8YI/AAAAAAAABVg/ZZ57t2-9Ke4/s38/youtubeicon.png)' target='_blank' title='Inscreva-se no nosso canal do YouTube'/>
 </li>
 </div>
 
@@ -607,9 +635,9 @@ $(window).bind("load resize", function(){
 <div id='shareblanterx'>
 <div class='share-postx'>
 <span class='tagx'><b:if cond='data:post.labels'><b:loop values='data:post.labels' var='label'><li><a expr:href='data:label.url' rel='tag'><data:label.name/></a></li><b:if cond='data:label.isLast == &quot;false&quot;'/></b:loop></b:if></span>
-<li><a class='gplus waves-effect waves-light' expr:href='&quot;http://plus.google.com/share?url=&quot; + data:blog.url' rel='nofollow' target='_blank' title='Compartilhar no Google+'/></li>
-<li><a class='facebook waves-effect waves-light' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:blog.url' rel='nofollow' target='_blank' title='Compartilhar no Facebook'/></li>
-<li><a class='twitter waves-effect waves-light' expr:href='&quot;http://twitter.com/share?url=&quot; + data:post.url' rel='nofollow' target='_blank' title='Compartilhar no Twitter'/></li>
+<li><a class='gplus waves-effect waves-light' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:blog.url' rel='nofollow' target='_blank' title='Compartilhar no Google+'/></li>
+<li><a class='facebook waves-effect waves-light' expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:blog.url' rel='nofollow' target='_blank' title='Compartilhar no Facebook'/></li>
+<li><a class='twitter waves-effect waves-light' expr:href='&quot;https://twitter.com/share?url=&quot; + data:post.url' rel='nofollow' target='_blank' title='Compartilhar no Twitter'/></li>
 </div></div>
 <div class='post-blanter'>
 <b:include data='posts' name='breadcrumb'/>
@@ -691,27 +719,27 @@ $(window).bind("load resize", function(){
 <b:loop values='data:posts' var='post'>
 <b:if cond='data:post.labels'>
 <div class='breadcrumbs' id='breadcrumbs'>
-<span itemscope='' itemtype='http://data-vocabulary.org/Breadcrumb'><a expr:href='data:blog.homepageUrl' itemprop='url' title='Home'><span itemprop='title'><i class='material-icons'>&#59530;</i> Home</span></a></span>
+<span itemscope='' itemtype='https://data-vocabulary.org/Breadcrumb'><a expr:href='data:blog.homepageUrl' itemprop='url' title='Home'><span itemprop='title'><i class='material-icons'>&#59530;</i> Página inicial</span></a></span>
 <b:loop values='data:post.labels' var='label'>
-&#8250; <span itemscope='' itemtype='http://data-vocabulary.org/Breadcrumb'><a expr:href='data:label.url' expr:title='data:label.name' itemprop='url'><span itemprop='title'><data:label.name/></span></a></span>
+&#8250; <span itemscope='' itemtype='https://data-vocabulary.org/Breadcrumb'><a expr:href='data:label.url' expr:title='data:label.name' itemprop='url'><span itemprop='title'><data:label.name/></span></a></span>
 </b:loop>
 &#8250; <span><data:post.title/></span>
 </div>
 <b:else/>
-<div class='breadcrumbs'><span><a expr:href='data:blog.homepageUrl' rel='tag' title='Home'><i class='material-icons'>&#59530;</i> Home</a></span> &#8250; <span>Unlabelled</span> &#8250; <span><data:post.title/></span></div>
+<div class='breadcrumbs'><span><a expr:href='data:blog.homepageUrl' rel='tag' title='Página inicial'><i class='material-icons'>&#59530;</i> Página inicial</a></span> &#8250; <span>Sem marcador</span> &#8250; <span><data:post.title/></span></div>
 </b:if>
 </b:loop>
 <b:else/>
 <b:if cond='data:blog.pageType == &quot;archive&quot;'>
 <div class='breadcrumbs'>
-<span><a expr:href='data:blog.homepageUrl' title='Home'><i class='material-icons'>&#59530;</i> Home</a></span> &#8250; <span>Archives for <data:blog.pageName/></span></div>
+<span><a expr:href='data:blog.homepageUrl' title='Página inicial'><i class='material-icons'>&#59530;</i> Página inicial</a></span> &#8250; <span>Arquivos para <data:blog.pageName/></span></div>
 <b:else/>
 <b:if cond='data:blog.pageType == &quot;index&quot;'>
 <div class='breadcrumbs'>
 <b:if cond='data:blog.pageName == &quot;&quot;'>
-<span><a expr:href='data:blog.homepageUrl' title='Home'><i class='material-icons'>&#59530;</i> Home</a></span> &#8250; <span>All posts</span>
+<span><a expr:href='data:blog.homepageUrl' title='Página inicial'><i class='material-icons'>&#59530;</i> Página inicial</a></span> &#8250; <span>Todos os artigos</span>
 <b:else/>
-<span><a expr:href='data:blog.homepageUrl' title='Home'>Home</a></span> &#8250; <span>Posts filed under <data:blog.pageName/></span>
+<span><a expr:href='data:blog.homepageUrl' title='Página inicial'>Página inicial</a></span> &#8250; <span>Artigos selecionados sobre <data:blog.pageName/></span>
 </b:if>
 </div>
 </b:if>
@@ -834,7 +862,7 @@ DEIXE SEU COMENTÁRIO
 <div class='comment_body'><div class='time_showup'><span class='comment_arrow'/><p><data:comment.body/></p>
 <a expr:href='data:comment.url' rel='nofollow' title='permalink'><span class='comment_date'><data:comment.timestamp/></span></a>
 <div class='bnm'><div class='permanent-blanter'>
-<a class='comment-delete ripple' expr:href='&quot;http://www.blogger.com/delete-comment.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot; + data:comment.id' expr:title='data:top.deleteCommentMsg'>Apagar</a></div></div>
+<a class='comment-delete ripple' expr:href='&quot;https://www.blogger.com/delete-comment.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot; + data:comment.id' expr:title='data:top.deleteCommentMsg'>Apagar</a></div></div>
 <div class='comment_intime'><div class='comment_reply'>
 <a class='ripple' expr:href='&quot;#r_&quot;+data:comment.anchorName' expr:id='&quot;r&quot;+data:comment.anchorName' onclick='javascript:Display_Reply_Form(this)'>Responder</a></div>
 </div><div class='clear'/></div></div><div class='clear'/></div>
@@ -1267,18 +1295,20 @@ EM <abbr class='published updated timeago' expr:title='data:post.timestampISO860
 </div>
 <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='description articleBody'>
 <div class='iklan-artikel'>
-<a href='#' target='_blank' title='Kunjungi blog Dunia Blanter'><img alt='iklan banner' height='250' src='https://2.bp.blogspot.com/-m3MrHg35-bk/VytnmXQDgxI/AAAAAAAAD00/wryNi0TepzA9ITvi-1j_OPHwYifswMN0ACLcB/s1600/AdSpace300x250.png' title='Kunjungi blog Dunia Blanter' width='300'/></a>
+
+<!-- anuncio postagem mundo informal -->
+
 </div>
 <data:post.body/>
 <div class='clear'/>
 <div class='spanshare'>Compartilhe esse artigo!</div>
 <div id='shareblanter'>
 <div class='share-post'>
-<li><a class='gplus waves-effect waves-light' expr:href='&quot;http://plus.google.com/share?url=&quot; + data:blog.url' rel='nofollow' target='_blank' title='Compartilhar no Google+'/></li>
-<li><a class='facebook waves-effect waves-light' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:blog.url' rel='nofollow' target='_blank' title='Compartilhar no Facebook'/></li>
-<li><a class='twitter waves-effect waves-light' expr:href='&quot;http://twitter.com/share?url=&quot; + data:post.url' rel='nofollow' target='_blank' title='Compartilhar no Twitter'/></li>
-<li><a class='pinterest waves-effect waves-light' expr:href='&quot;http://pinterest.com/pin/create/button/?url=&quot; + data:post.url + &quot;&amp;amp;media=&quot; + data:post.thumbnailUrl + &quot;&amp;amp;description= + data:post.title&quot;' rel='nofollow' target='_blank' title='Compartilhar no Pinterest'/></li>
-<li><a class='tumblr waves-effect waves-light' href='http://www.tumblr.com/share' rel='nofollow' target='_blank' title='Compartilhar no Tumblr'/></li>
+<li><a class='gplus waves-effect waves-light' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:blog.url' rel='nofollow' target='_blank' title='Compartilhar no Google+'/></li>
+<li><a class='facebook waves-effect waves-light' expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:blog.url' rel='nofollow' target='_blank' title='Compartilhar no Facebook'/></li>
+<li><a class='twitter waves-effect waves-light' expr:href='&quot;https://twitter.com/share?url=&quot; + data:post.url' rel='nofollow' target='_blank' title='Compartilhar no Twitter'/></li>
+<li><a class='pinterest waves-effect waves-light' expr:href='&quot;https://pinterest.com/pin/create/button/?url=&quot; + data:post.url + &quot;&amp;amp;media=&quot; + data:post.thumbnailUrl + &quot;&amp;amp;description= + data:post.title&quot;' rel='nofollow' target='_blank' title='Compartilhar no Pinterest'/></li>
+<li><a class='tumblr waves-effect waves-light' href='https://www.tumblr.com/share' rel='nofollow' target='_blank' title='Compartilhar no Tumblr'/></li>
 </div></div>
 </div>
 </div>
@@ -1292,7 +1322,7 @@ EM <abbr class='published updated timeago' expr:title='data:post.timestampISO860
 <a class='waves-effect waves-light' expr:href='data:post.url'><img expr:alt='data:post.title' expr:src='resizeImage(data:post.firstImageUrl,320)' expr:title='data:post.title' height='74' width='74'/></a></div>
 <b:else/>
 <div class='img-thumb'>
-<a class='waves-effect waves-light' expr:href='data:post.url'><img expr:alt='data:post.title' expr:title='data:post.title' height='74' src='http://v0.static.betalabs.com.br/wilson-591da56985027/ecommerce/belcosmeticos/img/unavailable.jpg' width='74'/></a></div>
+<a class='waves-effect waves-light' expr:href='data:post.url'><img expr:alt='data:post.title' expr:title='data:post.title' height='74' src='https://v0.static.betalabs.com.br/wilson-591da56985027/ecommerce/belcosmeticos/img/unavailable.jpg' width='74'/></a></div>
 </b:if>
 </b:if>
 <div class='post-box'>
@@ -1340,7 +1370,7 @@ EM <abbr class='published updated timeago' expr:title='data:post.timestampISO860
 <div class='backgroundcolor' id='infoautor'>
 
 <div class='borderdarkcolor' id='infoautor-wrap'><h5><a href='#' rel='author'><data:post.author/></a> <i class='material-icons'>&#59500;</i></h5>
-  escreve para o <b>Mundo Informal</b> sob a licença Creative Commons <b><a href='http://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR'>BY-SA 3.0</a></b>. Você pode usar e compartilhar este conteúdo desde que credite o autor e veículo original do mesmo.
+  escreve para o <b>Mundo Informal</b> sob a licença Creative Commons <b><a href='https://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR'>BY-SA 3.0</a></b>. Você pode usar e compartilhar este conteúdo desde que credite o autor e veículo original do mesmo.
 </div>
 
 </div>
@@ -1456,8 +1486,8 @@ var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>
 <div class='idbpesan'><div class='pesanbro'><span class='bcm'><data:blogCommentMessage/></span><div class='google_emo'/></div>
 <div class='menupesan'>
 <a class='tutup pencet' style='display:none'>http://www.idblanter.com/?assets/script/emoticon.xml</a>
-<a class='show_emo pencet waves-effect waves-light'><i class='material-icons'>&#57934;</i> Emoticon</a>
-<a class='pencet waves-effect waves-light' href='#feedback-link'><i class='material-icons'>&#59519;</i> Feedback</a>
+<a class='show_emo pencet waves-effect waves-light'><i class='material-icons'>&#57934;</i> Emoticons</a>
+<a class='pencet waves-effect waves-light' href='#feedback-link'><i class='material-icons'>&#59519;</i> Dar um Feedback</a>
 </div>
 </div>
 <script type='text/javascript'>$(document).ready(function(){$(&quot;.show_emo&quot;).click(function(){$(&quot;.google_emo&quot;).toggle(&quot;fast&quot;)})});$(document).ready(function(){$(&quot;.show_emo&quot;).click(function(){$(&quot;.bcm&quot;).toggleClass(&quot;hide&quot;)})});</script>
@@ -1841,6 +1871,297 @@ function idbcomments(a){var e;e=&#39;&lt;ul class=&quot;idbcomments&quot;&gt;&#3
 &lt;/div&gt;
 </b:if>
 <b:section class='sidebar' id='sidebar' preferred='yes'>
+  <b:widget id='HTML4' locked='false' title='EM DESTAQUE' type='HTML'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>&lt;style scoped=&quot;&quot; type=&quot;text/css&quot;&gt; ul.rcentside * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+ul.rcentside {
+    font-size: 11px
+}
+
+ul.rcentside,
+ul.rcentside li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative
+}
+
+ul.rcentside {
+    width: 100%;
+    height: 500px
+}
+
+ul.rcentside li {
+    height: 24.5%;
+    position: absolute;
+    padding: 0;
+    width: 49.5%;
+    float: left;
+    overflow: hidden;
+    display: none
+}
+
+ul.rcentside li:nth-child(1),
+ul.rcentside li:nth-child(2),
+ul.rcentside li:nth-child(3),
+ul.rcentside li:nth-child(4) {
+    display: block
+}
+
+ul.rcentside img {
+    border: 0;
+    width: 100%;
+    height: auto
+}
+
+ul.rcentside li:nth-child(1) {
+    width: 100%;
+    height: 49.5%;
+    margin: 0 0 2px;
+    left: 0;
+    top: 0
+}
+
+ul.rcentside li:nth-child(2) {
+    left: 0;
+    top: 50%
+}
+
+ul.rcentside li:nth-child(3) {
+    left: 50.5%;
+    top: 50%
+}
+
+ul.rcentside li:nth-child(4) {
+    width: 100%;
+    left: 0;
+    top: 75%
+}
+
+ul.rcentside .overlayx,
+ul.rcentside li {
+    transition: all .4s ease-in-out
+}
+
+ul.rcentside .overlayx {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    opacity: .4;
+    background-image: url(http://1.bp.blogspot.com/-FtnGJHMcWH8/UIV3IE-aaJI/AAAAAAAAGHs/WvLypnWxg5A/s1600/linebg-fade.png);
+    background-position: 50% 50%;
+    background-repeat: repeat-x
+}
+
+ul.rcentside .overlayx,
+ul.rcentside img {
+    margin: 3px
+}
+
+ul.rcentside li:nth-child(1).overlayx {
+    background-position: 50% 25%
+}
+
+ul.rcentside .overlayx:hover {
+    opacity: .1
+}
+
+ul.rcentside h4 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    z-index: 2;
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    padding: 10px;
+    line-height: 1.5em;
+    font-weight: normal;
+    overflow: hidden;
+    transition: all .3s
+}
+
+ul.rcentside li:hover h4 {
+    bottom: 30px
+}
+
+ul.rcentside li:nth-child(1)h4,
+ul.rcentside li:nth-child(4)h4 {
+    font-size: 150%
+}
+
+ul.rcentside .label_text {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    z-index: 2;
+    color: #fff;
+    font-size: 90%;
+    opacity: 0;
+    transition: all .3s
+}
+
+ul.rcentside li:hover .label_text {
+    bottom: 20px;
+    opacity: 1
+}
+
+ul.rcentside li:nth-child(2).autname,
+ul.rcentside li:nth-child(3).autname {
+    display: none
+}
+
+.buttons {
+    margin: 5px 0 0
+}
+.buttons{
+    display: none;
+}
+
+.buttons a {
+    display: inline-block;
+    text-indent: -9999px;
+    width: 15px;
+    height: 25px;
+    position: relative
+}
+
+.buttons a::before {
+    content: &quot;&quot;;
+    width: 0;
+    height: 0;
+    border-width: 8px 7px;
+    border-style: solid;
+    border-color: transparent #535353 transparent transparent;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    margin-left: -10px;
+    left: 50%
+}
+
+.buttons a.nextx::before {
+    border-color: transparent transparent transparent #535353;
+    margin-left: -3px
+}
+
+&lt;/style&gt; &lt;div id=&quot;featuredpostside&quot;&gt;&lt;/div&gt; &lt;script type=&#39;text/javascript&#39;&gt; function FeaturedPostSide(a) {
+    (function(e) {
+        var h= {
+            blogURL: &quot;&quot;, MaxPost: 5, idcontaint: &quot;&quot;, ImageSize: 100, interval: 5000, autoplay: false, loadingClass: &quot;loadingxx&quot;, pBlank: &quot;http://1.bp.blogspot.com/-htG7vy9vIAA/Tp0KrMUdoWI/AAAAAAAABAU/e7XkFtErqsU/s1600/grey.gif&quot;, MonthNames: [&quot;/01/&quot;, &quot;/02/&quot;, &quot;/03/&quot;, &quot;/04/&quot;, &quot;/05/&quot;, &quot;/06/&quot;, &quot;/07/&quot;, &quot;/08/&quot;, &quot;/09/&quot;, &quot;/10/&quot;, &quot;/11/&quot;, &quot;/12/&quot;], tagName: false
+        }
+        ;
+        h=e.extend( {}
+        , h, a);
+        var g=e(h.idcontaint);
+        var d=h.MaxPost*200;
+        g.html(&#39;&lt;div class=&quot;sliderx&quot;&gt;&lt;ul class=&quot;rcentside&quot;&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;buttons&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;prevx&quot;&gt;prev&lt;/a&gt;&lt;a href=&quot;#&quot; class=&quot;nextx&quot;&gt;next&lt;/a&gt;&lt;/div&gt;&#39;);
+        var f=function(w) {
+            var q, k, m, u, x, p, t, v, r, l=&quot;&quot;, s=w.feed.entry;
+            for(var o=0;
+            o&lt;s.length;
+            o++) {
+                for(var n=0;
+                n&lt;s[o].link.length;
+                n++) {
+                    if(s[o].link[n].rel==&quot;alternate&quot;) {
+                        q=s[o].link[n].href;
+                        break
+                    }
+                }
+                if(&quot;media$thumbnail&quot; in s[o]) {
+                    u=s[o].media$thumbnail.url.replace(/\/s[0-9]+\-c/g, &quot;/s&quot;+h.ImageSize+&quot;-c&quot;)
+                }
+                else {
+                    u=h.pBlank.replace(/\/s[0-9]+(\-c|\/)/, &quot;/s&quot;+h.ImageSize+&quot;$1&quot;)
+                }
+                k=s[o].title.$t;
+                r=s[o].published.$t.substring(0, 10);
+                m=s[o].author[0].name.$t;
+                x=r.substring(0, 4);
+                p=r.substring(5, 7);
+                t=r.substring(8, 10);
+                v=h.MonthNames[parseInt(p, 10)-1];
+                l+=&#39;&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;&#39;+q+&#39;&quot;&gt;&lt;div class=&quot;overlayx&quot;&gt;&lt;/div&gt;&lt;img class=&quot;random&quot; src=&quot;&#39;+u+&#39;&quot;/&gt;&lt;h4&gt;&#39;+k+&#39;&lt;/h4&gt;&lt;/a&gt;&lt;div class=&quot;label_text&quot;&gt;&lt;span class=&quot;date&quot;&gt;&lt;span class=&quot;dd&quot;&gt;&#39;+t+&#39;&lt;/span&gt; &lt;span class=&quot;dm&quot;&gt;&#39;+v+&#39;&lt;/span&gt; &lt;span class=&quot;dy&quot;&gt;&#39;+x+&#39;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;autname&quot;&gt;&#39;+m+&quot;&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;&quot;
+            }
+            e(&quot;ul&quot;, g).append(l).addClass(h.loadingClass)
+        }
+        ;
+        var c=function() {
+            e(h.idcontaint+&quot; .nextx&quot;).click()
+        }
+        ;
+        var b=function() {
+            e.get((h.blogURL===&quot;&quot;?window.location.protocol+&quot;//&quot;+window.location.host: h.blogURL)+&quot;/feeds/posts/summary&quot;+(h.tagName===false?&quot;&quot;: &quot;/-/&quot;+h.tagName)+&quot;?max-results=&quot;+h.MaxPost+&quot;&amp;orderby=published&amp;alt=json-in-script&quot;, f, &quot;jsonp&quot;);
+            setTimeout(function() {
+                e(h.idcontaint+&quot; .prevx&quot;).click(function() {
+                    e(h.idcontaint+&quot; .sliderx li:first&quot;).before(e(h.idcontaint+&quot; .sliderx li:last&quot;));
+                    return false
+                }
+                );
+                e(h.idcontaint+&quot; .nextx&quot;).click(function() {
+                    e(h.idcontaint+&quot; .sliderx li:last&quot;).after(e(h.idcontaint+&quot; .sliderx li:first&quot;));
+                    return false
+                }
+                );
+                if(h.autoplay) {
+                    var i=h.interval;
+                    var j=setInterval(c, i);
+                    e(h.idcontaint+&quot; .sliderx li:first&quot;).before(e(h.idcontaint+&quot; .sliderx li:last&quot;));
+                    e(h.idcontaint+&quot; .sliderx&quot;).hover(function() {
+                        clearInterval(j)
+                    }
+                    , function() {
+                        j=setInterval(c, i)
+                    }
+                    )
+                }
+                e(&quot;ul&quot;, g).removeClass(h.loadingClass)
+            }
+            , d)
+        }
+        ;
+        e(document).ready(b)
+    }
+    )(jQuery)
+}
+
+;
+//&lt;![CDATA[
+FeaturedPostSide( {
+    blogURL: &quot;https://in4mal.blogspot.com&quot;, 
+      MaxPost: 8, idcontaint: &quot;#featuredpostside&quot;, 
+      ImageSize: 300, 
+      interval: 5000, 
+      autoplay: true, 
+      tagName: false
+}
+
+);
+//]]&gt;
+&lt;/script&gt;</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
   <b:widget id='HTML1' locked='false' title='Anunciantes' type='HTML'>
     <b:widget-settings>
       <b:widget-setting name='content'><![CDATA[<center><a href='#' target='_blank' title='Kunjungi blog Dunia Blanter'><img alt='iklan banner' height='250' src='https://2.bp.blogspot.com/-m3MrHg35-bk/VytnmXQDgxI/AAAAAAAAD00/wryNi0TepzA9ITvi-1j_OPHwYifswMN0ACLcB/s1600/AdSpace300x250.png' title='Kunjungi blog Dunia Blanter' width='300'/></a></center>]]></b:widget-setting>
@@ -1871,11 +2192,11 @@ function idbcomments(a){var e;e=&#39;&lt;ul class=&quot;idbcomments&quot;&gt;&#3
 Copyright &#169; <span itemprop='copyrightYear'>2017</span> <span itemprop='copyrightHolder' itemscope='itemscope' itemtype='https://schema.org/Organization'><a expr:href='data:blog.homepageUrl' expr:title='data:blog.title' itemprop='url'><span itemprop='name'><data:blog.title/></span></a></span> - All Rights Reserved<br/>
 Com o poder do <i class='fa fa-hashtag'/><a href='https://www.blogger.com' target='_blank' title='Blogger'>Blogger</a></div>
 <div id='credit'>
-<li><a href='/p/about.html' itemprop='url' title='Quem somos'><span itemprop='name'>Quem somos</span></a></li>
-<li><a href='/p/contact.html' itemprop='url' title='Contato'><span itemprop='name'>Contato</span></a></li>
-<li><a href='#' itemprop='url' title='Sitemap'><span itemprop='name'>Mapa do Site</span></a></li>
-<li><a href='#' itemprop='url' title='Privacidade'><span itemprop='name'>Privacidade</span></a></li>
-<li><a href='#' itemprop='url' title='Parceiros'><span itemprop='name'>Parceiros</span></a></li>
+<li><a href='https://www.in4mal.blogspot.com/p/sobre.html' itemprop='url' title='Quem somos'><span itemprop='name'>Quem somos</span></a></li>
+<li><a href='https://www.in4mal.blogspot.com/p/contato.html' itemprop='url' title='Contato'><span itemprop='name'>Contato</span></a></li>
+<li><a href='https://www.in4mal.blogspot.com/p/mapa-do-site.html' itemprop='url' title='Sitemap'><span itemprop='name'>Mapa do Site</span></a></li>
+<li><a href='https://www.in4mal.blogspot.com/p/politica-de-privacidade.html' itemprop='url' title='Privacidade'><span itemprop='name'>Privacidade</span></a></li>
+<li><a href='https://www.in4mal.blogspot.com/p/parceria.html' itemprop='url' title='Parceiros'><span itemprop='name'>Parceiros</span></a></li>
 </div></div></div></footer></div>
 <a class='waves-effect waves-light' href='#' id='BackToTop'><i class='fa fa-angle-up'/></a>
 <script type='text/javascript'>
