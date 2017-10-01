@@ -662,6 +662,33 @@ $(window).bind("load resize", function(){
 <div id='shareblanterx'>
 <div class='share-postx'>
 <span class='tagx'><b:if cond='data:post.labels'><b:loop values='data:post.labels' var='label'><li><a expr:href='data:label.url' rel='tag'><data:label.name/></a></li><b:if cond='data:label.isLast == &quot;false&quot;'/></b:loop></b:if></span>
+
+<b:if cond='data:blog.pageType == "item"'>
+        <style>
+            .comment-link {
+                background: #000;
+                float: left;
+                text-align: center;
+                width: 80px;
+                margin-left:-15px;
+                margin-top:5px;
+                margin-bottom:5px;
+            }
+        
+            a.comment-link {
+                color: #fff;
+                font-weight: 700;
+                padding: 4px 2px 1px 0;
+                font-size: 16px;
+                text-decoration: none;
+                height: 25px
+            }
+            a.comment-link:hover {background: #333;}
+            a.comment-link:active {background: #000;}
+        </style> 
+        <a class='comment-link' expr:href='data:post.addCommentUrl'><img src='http://lh5.ggpht.com/_QocHY3CSRM0/TM9rpnkzW9I/AAAAAAAAJAk/quiuSI62eWQ/nintendoblast_lighthouse_commenticon.png'/> <fb:comments-count expr:href='data:post.url'/></a>
+          </b:if>
+
 <li><a class='gplus waves-effect waves-light' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:blog.url' rel='nofollow' target='_blank' title='Compartilhar no Google+'/></li>
 <li><a class='facebook waves-effect waves-light' expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:blog.url' rel='nofollow' target='_blank' title='Compartilhar no Facebook'/></li>
 <li><a class='twitter waves-effect waves-light' expr:href='&quot;https://twitter.com/share?url=&quot; + data:post.url' rel='nofollow' target='_blank' title='Compartilhar no Twitter'/></li>
