@@ -123,7 +123,10 @@ h1.post-title:before {
 /* Ocultar anuncio da header em telas menores*/
 @media screen and (max-width:600px){
 #HTML2{display:none;}
+div#tabs-blanter{display:none;}
 .header img{margin-left:50px}
+div#image-recent{display:none;}
+div#tempat-post{display:none;}
 }
 ]]></b:skin>
 <b:template-skin>
@@ -1836,7 +1839,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
           <div expr:class='data:showSnippets ? &quot;item-content&quot; : &quot;item-thumbnail-only&quot;'>
             <b:if cond='data:post.featuredImage.isResizable or data:post.thumbnail'>
               <div class='item-thumbnail'>
-                <a expr:href='data:post.href' target='_blank'>
+                <a expr:href='data:post.href' ><!-- Removi o atributo target='_blank' pra parar de pedir pra abrir em nova aba no mobile -->
                   <b:with value='data:post.featuredImage.isResizable                                  ? resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;)                                  : data:post.thumbnail' var='image'>
                     <img alt='' border='0' expr:src='data:image'/>
                   </b:with>
