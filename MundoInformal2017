@@ -301,6 +301,11 @@ span.newarlina_title2{font-size:18px;line-height:1.2em}}
 .newarlina_right{width:100%;float:left;margin:0;padding:0}
 ul.newarlina_thumbs li{margin:0 0 10px;padding:0 0 10px;}
 span.newarlina_title2{font-size:18px;line-height:1.2em}}
+
+/* Ocultar anuncio da header em telas menores*/
+@media screen and (max-width:601px){
+#HTML2{display:none;}
+}
 </style>
 </b:if>
 </b:if>
